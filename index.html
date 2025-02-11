@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <body style="background-color:#140521;">
-    <h1 style="font-family:lexend; color:#ffffff; text-align:center;">jdevel</h1>
-    <p style="font-family:lexend; color:#ffffff; text-align:center;">Hello to anyone who happens to read this. I'm Jacob and I'm a beginner Java developer looking to make cool stuff to share with the world.</p>
-    
-    <hr>
-    
-    <h2 style="font-family:lexend; color:#ffffff; text-align:center;">Not-So-Frequently Asked Questions</h2>
-    <p style="font-family:lexend; color:#ffffff; text-align:center;"><b>Q: </b>What's your favorite font?<br><b>A: </b>Lexend. This text is shown in Lexend.</p>
-    <p style="font-family:lexend; color:#ffffff; text-align:center;"><b>Q: </b>How long have you been coding in Java?<br><b>A: </b>Not long at all. I've been attempting to learn since January 19, 2025.</p>
-    
-    <hr>
-    
-    <h2 style="font-family:lexend; color:#ffffff; text-align:center;">Links</h2>
-    <p style="font-family:lexend; color:#ffffff; text-align:center;"><a href="https://discord.gg/9XaYmJr7QD" style="color:#d11cd4;">My Discord Server</a></p>
+  <head>
+  <meta charset="UTF-8">
+    <style>
+      p {
+        color: white;
+        font-size: 120%;
+        font-family:verdana;
+      }
+      
+      h1 {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-family:verdana;
+      }
+      
+      h2 {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-family:verdana;
+      }
+      
+      h3 {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-family:verdana;
+      }
+      
+      a:link {
+        color: #9653ed;
+      }
+      
+      a:hover {
+        color: #536aed;
+      }
+      
+      body {
+        background: #140521;
+      }
+      
+      header {
+        height:50px;
+        background:#210738;
+      }
+      
+      abt {
+        float:center;
+        width:60%;
+        height:220px;
+        background: #140521;
+      }
+      
+      linksbox {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #210738;
+        padding:30px;
+      }
+      
+      newsbox {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background: #370c5c;
+        padding:30px;
+      }
+      
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+      
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>jdevel</h1>
+    </header>
+    <abt>
+      <h2>About Me</h2>
+      <p style="text-align:center;">I'm Jacob, a beginner Java developer who also happens to be learning a tiny bit of HTML on the side (if you can't tell by the website).</p>
+      <p style="text-align:center;">This is my personal site hosted on GitHub, which I'll use to post updates on some of my projects, and occasionally other things, too.</p>
+    </abt>
+    <section>
+      <linksbox>
+        <h2>Links</h2>
+        <p style="text-align:left;"><a href="https://discord.gg/9XaYmJr7QD">My Discord Server</a></p>
+        <p style="text-align:left;"><a href="https://scratch.mit.edu/users/KingJacob101/">Scratch Profile</a> </p>
+      </linksbox>
+      <newsbox>
+        <h2>Upcoming Projects</h2>
+        <h3>[omega]</h3>
+        <p style="text-align:center;">[omega] is an Incremental game that I plan to have entirely run in the Command Prompt/Terminal. "Why not make a cool menu to display everything Jacob?" Because I am lazy. Maybe in a a future update.</p>
+        <p style="text-align:center;">Programming for this game has been going very smoothly so far, but I still can't exactly give a release date. A rough estimate of the possible release would be mid-March.
+      </newsbox>
+    </section>
   </body>
 </html>
